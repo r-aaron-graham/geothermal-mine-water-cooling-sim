@@ -1,0 +1,236 @@
+{
+  "backup_cop_2": {
+    "fifo": {
+      "completed": 5,
+      "deadline_misses": 3,
+      "modeled_energy_kwh": 1289.72,
+      "kwh_per_completed_job": 257.94,
+      "trace": [
+        {
+          "slot": 0,
+          "cooling_capacity_kw": 150.24,
+          "job": "large-a",
+          "backup_kwh": 104.88
+        },
+        {
+          "slot": 1,
+          "cooling_capacity_kw": 183.63,
+          "job": "small-a",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 2,
+          "cooling_capacity_kw": 651.06,
+          "job": "small-b",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 3,
+          "cooling_capacity_kw": 200.33,
+          "job": "large-b",
+          "backup_kwh": 104.84
+        },
+        {
+          "slot": 4,
+          "cooling_capacity_kw": 851.38,
+          "job": "small-c",
+          "backup_kwh": 0.0
+        }
+      ]
+    },
+    "cooling_aware": {
+      "completed": 5,
+      "deadline_misses": 0,
+      "modeled_energy_kwh": 1080.0,
+      "kwh_per_completed_job": 216.0,
+      "trace": [
+        {
+          "slot": 0,
+          "cooling_capacity_kw": 150.24,
+          "job": "small-a",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 1,
+          "cooling_capacity_kw": 183.63,
+          "job": "small-b",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 2,
+          "cooling_capacity_kw": 651.06,
+          "job": "large-a",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 3,
+          "cooling_capacity_kw": 200.33,
+          "job": "small-c",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 4,
+          "cooling_capacity_kw": 851.38,
+          "job": "large-b",
+          "backup_kwh": 0.0
+        }
+      ]
+    }
+  },
+  "backup_cop_3": {
+    "fifo": {
+      "completed": 5,
+      "deadline_misses": 3,
+      "modeled_energy_kwh": 1219.81,
+      "kwh_per_completed_job": 243.96,
+      "trace": [
+        {
+          "slot": 0,
+          "cooling_capacity_kw": 150.24,
+          "job": "large-a",
+          "backup_kwh": 69.92
+        },
+        {
+          "slot": 1,
+          "cooling_capacity_kw": 183.63,
+          "job": "small-a",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 2,
+          "cooling_capacity_kw": 651.06,
+          "job": "small-b",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 3,
+          "cooling_capacity_kw": 200.33,
+          "job": "large-b",
+          "backup_kwh": 69.89
+        },
+        {
+          "slot": 4,
+          "cooling_capacity_kw": 851.38,
+          "job": "small-c",
+          "backup_kwh": 0.0
+        }
+      ]
+    },
+    "cooling_aware": {
+      "completed": 5,
+      "deadline_misses": 0,
+      "modeled_energy_kwh": 1080.0,
+      "kwh_per_completed_job": 216.0,
+      "trace": [
+        {
+          "slot": 0,
+          "cooling_capacity_kw": 150.24,
+          "job": "small-a",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 1,
+          "cooling_capacity_kw": 183.63,
+          "job": "small-b",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 2,
+          "cooling_capacity_kw": 651.06,
+          "job": "large-a",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 3,
+          "cooling_capacity_kw": 200.33,
+          "job": "small-c",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 4,
+          "cooling_capacity_kw": 851.38,
+          "job": "large-b",
+          "backup_kwh": 0.0
+        }
+      ]
+    }
+  },
+  "backup_cop_5": {
+    "fifo": {
+      "completed": 5,
+      "deadline_misses": 3,
+      "modeled_energy_kwh": 1163.89,
+      "kwh_per_completed_job": 232.78,
+      "trace": [
+        {
+          "slot": 0,
+          "cooling_capacity_kw": 150.24,
+          "job": "large-a",
+          "backup_kwh": 41.95
+        },
+        {
+          "slot": 1,
+          "cooling_capacity_kw": 183.63,
+          "job": "small-a",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 2,
+          "cooling_capacity_kw": 651.06,
+          "job": "small-b",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 3,
+          "cooling_capacity_kw": 200.33,
+          "job": "large-b",
+          "backup_kwh": 41.93
+        },
+        {
+          "slot": 4,
+          "cooling_capacity_kw": 851.38,
+          "job": "small-c",
+          "backup_kwh": 0.0
+        }
+      ]
+    },
+    "cooling_aware": {
+      "completed": 5,
+      "deadline_misses": 0,
+      "modeled_energy_kwh": 1080.0,
+      "kwh_per_completed_job": 216.0,
+      "trace": [
+        {
+          "slot": 0,
+          "cooling_capacity_kw": 150.24,
+          "job": "small-a",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 1,
+          "cooling_capacity_kw": 183.63,
+          "job": "small-b",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 2,
+          "cooling_capacity_kw": 651.06,
+          "job": "large-a",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 3,
+          "cooling_capacity_kw": 200.33,
+          "job": "small-c",
+          "backup_kwh": 0.0
+        },
+        {
+          "slot": 4,
+          "cooling_capacity_kw": 851.38,
+          "job": "large-b",
+          "backup_kwh": 0.0
+        }
+      ]
+    }
+  }
+}
