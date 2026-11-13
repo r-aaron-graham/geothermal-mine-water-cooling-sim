@@ -8,6 +8,8 @@ The model uses a water density of 0.997 kg/L and a specific heat of 4.186 kJ/(kg
 
 ## Run the example
 
+Use Python 3.10 or later. Install the pinned dependency from the repository root.
+
 ```bash
 python -m pip install -r requirements.txt
 python simulation.py --inlet-temp 12 --flow-rate 100 --heat-load 500
@@ -19,7 +21,7 @@ See [simulation.py](simulation.py) for the CLI and energy balance.
 
 ## Compute scheduling experiment · v0.1.0 local build
 
-Compare FIFO with cooling-aware dispatch over five synthetic one-hour slots on
+After installing the dependency above, compare FIFO with cooling-aware dispatch over five synthetic one-hour slots on
 one worker. The latter defers jobs that exceed available water-side cooling
 until a cooler slot or the job's deadline. Both use backup cooling when a
 running workload exceeds water-side capacity.
@@ -28,6 +30,8 @@ running workload exceeds water-side capacity.
 python -m unittest -q
 python scheduler.py
 ```
+
+At a backup chiller coefficient of performance of 3, both policies complete all five jobs. Cooling-aware dispatch reduces deadline misses from three to zero and modeled energy from 243.96 to 216.00 kWh per completed job in this scenario.
 
 [The example results](scheduler-results-v1.json) include per-slot dispatch,
 deadline misses, and modeled kWh per completed job for backup chiller
