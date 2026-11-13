@@ -17,3 +17,9 @@ jobs:
       - run: python -m unittest -v
       - run: python scheduler.py > scheduler-actual.json
       - run: diff -u scheduler-results-v1.json scheduler-actual.json
+      - name: Build container
+        run: docker build --tag reviewer-smoke .
+      - name: Verify container output
+        run: |
+          docker run --rm reviewer-smoke > container-results.json
+          diff -u scheduler-results-v1.json container-results.json

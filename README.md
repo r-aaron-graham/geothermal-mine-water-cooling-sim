@@ -39,3 +39,14 @@ coefficients of performance of 2, 3, and 5. The energy total includes IT
 energy and backup chiller electricity. Pumping, idle consumption, thermal
 storage, and backup capacity limits are outside this model. The scenario
 illustrates scheduling trade-offs and uses no measured mine or facility data.
+
+## Deployment verification
+
+Build the reviewer container from the repository root.
+
+```sh
+docker build -t reviewer-smoke .
+docker run --rm reviewer-smoke
+```
+
+The container runs the synthetic scheduling job and exits. Its output is modeled and matches the checked-in scenario.
