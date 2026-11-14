@@ -50,3 +50,9 @@ docker run --rm reviewer-smoke
 ```
 
 The container runs the synthetic scheduling job and exits. Its output is modeled and matches the checked-in scenario.
+
+## Reproduce the CI dependency set
+
+Use Python 3.12 on Linux. GitHub Actions and the Docker build apply `requirements.lock` as pip constraints. The file pins resolved runtime and test dependencies. For a local install, add `-c requirements.lock` to the install command above. Verify the installed packages with `python -m pip check`.
+
+When updating dependencies, resolve the runtime and test requirements together in a clean Python 3.12 environment and rerun CI, including the container smoke test.

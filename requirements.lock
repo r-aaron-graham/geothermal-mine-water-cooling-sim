@@ -1,0 +1,2 @@
+# Python 3.12 on Linux. Use as pip constraints with the project requirements.
+click==8.1.7
